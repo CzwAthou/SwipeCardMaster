@@ -5,19 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btnRefresh"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="刷新"/>
-
-    <Button
-        android:id="@+id/btnTanTan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/btnRefresh"
-        android:text="探探"/>
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv"
         android:layout_width="match_parent"

@@ -1,5 +1,6 @@
 package com.athou.swipecarddemo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
@@ -46,6 +47,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 mDatas.add(new SwipeCardBean(mDatas.size() + 1, "http://news.k618.cn/tech/201604/W020160407281077548026.jpg", "增加的"));
                 mAdapter.notifyDataSetChanged();
+            }
+        });
+
+        findViewById(R.id.btnTanTan).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, TanTanActivity.class));
             }
         });
     }
